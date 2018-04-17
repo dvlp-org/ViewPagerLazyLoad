@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.lvzishen.viewpagerlazyload.BankFinanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <TextView
+            android:layout_marginTop="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/wave_bg"/>
+
+        <LinearLayout
+            android:layout_marginBottom="38dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="38dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="5万起"
+                    android:textColor="#333333"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="投资金额"
+                    android:textColor="#999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="5万起"
+                    android:textColor="#333333"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="投资金额"
+                    android:textColor="#999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/waveview"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp">
+
+            <com.yuan.waveview.WaveView
+                android:id="@+id/waveviewid"
+                android:layout_width="154dp"
+                android:layout_height="154dp"
+                app:backgroudColor="#c7a975"
+                app:progressColor="#ffffff"></com.yuan.waveview.WaveView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_toStartOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="14sp"
+            android:text="低风险"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="14sp"
+            android:text="28天"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="84dp"
+            android:layout_toRightOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="14sp"
+            android:text="募集中"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2%"
+                android:textColor="#fffffe"
+                android:textSize="50.8sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="预期年化收益"
+                android:textColor="#99ffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

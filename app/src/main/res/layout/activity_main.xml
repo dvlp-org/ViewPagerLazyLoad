@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/viewpager_id"
+       android:layout_width="match_parent"
+       android:layout_height="340dp"/>
+
+   <TextView
+       android:layout_marginTop="294dp"
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="#e9e9e9"
+       android:id="@+id/textView2" />
+
+   <LinearLayout
+       android:id="@+id/layout_parents"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="290dp"
+       android:layout_alignParentStart="true">
+
+      <LinearLayout
+          android:id="@+id/layout_child"
+          android:layout_weight="1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center">
+         <TextView
+             android:layout_width="10dp"
+             android:layout_height="10dp"
+             android:background="@mipmap/wave_s_bg"/>
+         <TextView
+             android:layout_marginTop="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="30天"/>
+      </LinearLayout>
+
+
+   </LinearLayout>
+</RelativeLayout>

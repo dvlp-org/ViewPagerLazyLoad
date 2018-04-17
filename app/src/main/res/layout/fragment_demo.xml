@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.lvzishen.viewpagerlazyload.BankFinanceFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#f5f5f5"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_bankfinance"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="联储开放式产品"
+        />
+    <RelativeLayout
+        android:id="@+id/floatBg"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <TextView
+            android:layout_marginTop="135dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/wave_bg"/>
+        <LinearLayout
+            android:layout_marginTop="145dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="38dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="5万起"
+                    android:textColor="#333333"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="投资金额"
+                    android:textColor="#999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="5万起"
+                    android:textColor="#333333"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="投资金额"
+                    android:textColor="#999999"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="84dp"
+            android:visibility="invisible"
+            android:layout_toStartOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="14sp"
+            android:text="低风险"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:id="@+id/tv_right1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:text="二货残"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_right2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="64dp"
+            android:visibility="invisible"
+            android:layout_toRightOf="@+id/waveview"
+            android:background="@mipmap/wave_s_bg"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="14sp"
+            android:text="募集中"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/waveview"
+            android:layout_width="154dp"
+            android:layout_height="154dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp">
+
+            <com.example.lvzishen.viewpagerlazyload.view.WaveView
+                android:id="@+id/waveviewid"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/colorChoice"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2%"
+                android:textColor="#fffffe"
+                android:textSize="50.8sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="预期年化收益"
+                android:textColor="#99ffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
